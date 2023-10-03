@@ -230,11 +230,13 @@ id="canvas"></CANVAS>             </DIV></DIV>
 		</div>
 	</div>
 </div>
-<iframe src="./silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-<audio id="player" preload="auto" autoplay loop>
-	<source src="./miss_you.mp3" type="audio/mp3">
-</audio>
+<audio id="player" preload="auto" autoplay loop><source src="./miss_you.mp3" type="audio/mp3"></audio>
 
 
 </body>
+<script>
+	window.onclick = function(){
+		audio.play();
+	}
+</script>
 </html>
